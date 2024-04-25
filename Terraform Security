@@ -1,0 +1,10 @@
+Execute Terraform programmatically to minimize human error and enforce security policies.
+Use safe Terraform modules and avoid using untrusted or vulnerable third-party components.
+Secure the data store when remotely storing state data to prevent unauthorized access (for example, through encryption and restrictive access permissions).
+Avoid storing secrets in state files; instead, use secret management solutions like AWS Secrets Manager, Azure Key Vault, or Google Cloud Secret Manager.
+Use Terraform security scanners to identify and remediate potential vulnerabilities.
+Implement centralized security policy and governance within Terraform code to improve visibility and enforce least privilege.
+Require multi-factor authentication for collaborators to improve security posture.
+Keep Terraform and all modules up to date.
+Regularly audit terraform configurations for security vulnerabilities and misconfigurations, and build in appropriate automated tooling to detect violations prior to deployment.
+Conduct regular drift detection to determine if resources deployed in your cloud provider match what should have been deployed in the terraform state file.
